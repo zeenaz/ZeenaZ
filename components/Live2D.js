@@ -16,7 +16,7 @@ export default function Live2D() {
   useEffect(() => {
     if (showPet && !isMobile()) {
       Promise.all([
-        loadExternalResource('https://raw.githubusercontent.com/imuncle/live2d/master/model/22/model.default.json', 'json') //https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/live2d.min.js
+        loadExternalResource('https://raw.githubusercontent.com/imuncle/live2d/master/model/22/model.default.json', 'js') //https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/live2d.min.js
       ]).then((e) => {
         if (typeof window?.loadlive2d !== 'undefined') {
           // https://github.com/xiazeyu/live2d-widget-models
