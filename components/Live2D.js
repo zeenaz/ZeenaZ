@@ -16,7 +16,7 @@ export default function Live2D() {
   useEffect(() => {
     if (showPet && !isMobile()) {
       Promise.all([
-        loadExternalResource('https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/live2d.min.js', 'js')
+        loadExternalResource('https://raw.githubusercontent.com/imuncle/live2d/master/model/xiaomai/xiaomai.model.json', 'js') //https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/live2d.min.js
       ]).then((e) => {
         if (typeof window?.loadlive2d !== 'undefined') {
           // https://github.com/xiazeyu/live2d-widget-models
